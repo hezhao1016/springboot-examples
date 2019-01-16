@@ -20,7 +20,7 @@ import java.lang.reflect.Method;
 @Component
 public class SpringCacheKeyGenerator implements KeyGenerator {
 
-    private final static int NO_PARAM_KEY = 0;
+    private static final int NO_PARAM_KEY = 0;
     /** key前缀，用于区分不同项目的缓存，建议每个项目单独设置 */
     private String keyPrefix = "demo";
 

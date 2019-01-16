@@ -18,7 +18,7 @@ import java.util.Optional;
 @Component
 public class Receiver {
 
-    private Logger logger = LoggerFactory.getLogger(Receiver.class);
+    private static final Logger logger = LoggerFactory.getLogger(Receiver.class);
 
     /**
      * 使用KafkaListener配置消费者监听的队列

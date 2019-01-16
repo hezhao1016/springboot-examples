@@ -21,7 +21,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/person-ribbon")
 public class PersonController {
 
-    private Logger logger = LoggerFactory.getLogger(PersonController.class);
+    private static final Logger logger = LoggerFactory.getLogger(PersonController.class);
 
     @Autowired
     private RestTemplate restTemplate;

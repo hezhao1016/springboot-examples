@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class Test2Controller {
 
-    private Logger logger = LoggerFactory.getLogger(Test2Controller.class);
+    private static final Logger logger = LoggerFactory.getLogger(Test2Controller.class);
 
     @GetMapping("/test2")
     @ResponseBody

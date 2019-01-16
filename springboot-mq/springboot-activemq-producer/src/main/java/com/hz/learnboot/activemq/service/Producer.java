@@ -17,7 +17,7 @@ import javax.jms.Destination;
 @Component
 public class Producer {
 
-    private Logger logger = LoggerFactory.getLogger(Producer.class);
+    private static final Logger logger = LoggerFactory.getLogger(Producer.class);
 
     // 也可以注入JmsTemplate，JmsMessagingTemplate对JmsTemplate进行了封装
     @Autowired

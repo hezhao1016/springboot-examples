@@ -17,7 +17,7 @@ import java.util.UUID;
 @Service
 public class AsyncTaskService {
 
-    private Logger logger = LoggerFactory.getLogger(AsyncTaskService.class);
+    private static final Logger logger = LoggerFactory.getLogger(AsyncTaskService.class);
 
     @Async    // 这里进行标注为异步任务，在执行此方法的时候，会单独开启线程来执行
     public void f1() {

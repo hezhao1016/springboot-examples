@@ -18,7 +18,7 @@ import java.util.Date;
 @Service
 public class MemcachedService {
 
-    private Logger logger = LoggerFactory.getLogger(MemcachedService.class);
+    private static final Logger logger = LoggerFactory.getLogger(MemcachedService.class);
 
     @Autowired
     private MemCachedClient memCachedClient;

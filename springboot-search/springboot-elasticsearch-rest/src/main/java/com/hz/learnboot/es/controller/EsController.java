@@ -40,7 +40,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/es")
 public class EsController {
 
-    private Logger logger = LoggerFactory.getLogger(EsController.class);
+    private static final Logger logger = LoggerFactory.getLogger(EsController.class);
 
     /** 测试索引 */
     private String indexName="test_rest";

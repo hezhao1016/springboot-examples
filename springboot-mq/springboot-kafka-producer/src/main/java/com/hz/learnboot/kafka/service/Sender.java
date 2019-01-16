@@ -16,7 +16,7 @@ import org.springframework.util.concurrent.ListenableFuture;
 @Component
 public class Sender {
 
-    private Logger logger = LoggerFactory.getLogger(Sender.class);
+    private static final Logger logger = LoggerFactory.getLogger(Sender.class);
 
     @Autowired
     private KafkaTemplate kafkaTemplate;

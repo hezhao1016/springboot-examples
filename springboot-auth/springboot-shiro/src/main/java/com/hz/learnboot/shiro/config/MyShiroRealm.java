@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 import javax.annotation.Resource;
 
 public class MyShiroRealm extends AuthorizingRealm {
-    private Logger logger = LoggerFactory.getLogger(MyShiroRealm.class);
+    private static final Logger logger = LoggerFactory.getLogger(MyShiroRealm.class);
 
     @Resource
     private UserInfoService userInfoService;

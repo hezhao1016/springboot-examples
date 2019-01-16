@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 public class MyFilter extends ZuulFilter {
 
-    private Logger logger = LoggerFactory.getLogger(MyFilter.class);
+    private static final Logger logger = LoggerFactory.getLogger(MyFilter.class);
 
     /*
     filterType：返回一个字符串代表过滤器的类型，在zuul中定义了四种不同生命周期的过滤器类型，具体如下：

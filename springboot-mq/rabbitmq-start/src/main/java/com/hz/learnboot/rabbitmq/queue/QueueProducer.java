@@ -16,7 +16,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class QueueProducer {
 
-    private final static String QUEUE_NAME = "queue.message";
+    private static final String QUEUE_NAME = "queue.message";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         //1.获取连接

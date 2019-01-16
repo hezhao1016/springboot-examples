@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 public class Test1Controller {
 
-    private Logger logger = LoggerFactory.getLogger(Test1Controller.class);
+    private static final Logger logger = LoggerFactory.getLogger(Test1Controller.class);
 
     @GetMapping("/test1")
     @RequestLimit(count = 10, time = 5000)

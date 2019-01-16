@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class FanoutCustomer1 {
 
-    private final static String EXCHANGE_NAME = "fanoutExchange";
+    private static final String EXCHANGE_NAME = "fanoutExchange";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1.获取连接

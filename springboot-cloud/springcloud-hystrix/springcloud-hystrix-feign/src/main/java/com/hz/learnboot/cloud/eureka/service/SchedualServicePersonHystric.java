@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SchedualServicePersonHystric implements PersonFeignService {
 
-    private Logger logger = LoggerFactory.getLogger(SchedualServicePersonHystric.class);
+    private static final Logger logger = LoggerFactory.getLogger(SchedualServicePersonHystric.class);
 
     @Override
     public Person getPersonById(Long id) {

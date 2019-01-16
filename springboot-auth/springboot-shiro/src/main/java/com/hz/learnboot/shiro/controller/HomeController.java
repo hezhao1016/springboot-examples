@@ -16,7 +16,7 @@ import java.util.Map;
 @Controller
 public class HomeController {
 
-    private Logger logger = LoggerFactory.getLogger(HomeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping({"/","/index"})
     public String index(){

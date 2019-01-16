@@ -18,7 +18,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class DirectProducer {
 
-    private final static String EXCHANGE_NAME = "directExchange";
+    private static final String EXCHANGE_NAME = "directExchange";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         //1.获取连接

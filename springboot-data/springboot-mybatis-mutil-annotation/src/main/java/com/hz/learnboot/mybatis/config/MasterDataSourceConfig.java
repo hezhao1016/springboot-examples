@@ -28,7 +28,7 @@ import java.sql.SQLException;
 @MapperScan(basePackages = MasterDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterDataSourceConfig {
 
-    private static Logger logger = LoggerFactory.getLogger(MasterDataSourceConfig.class);
+    private static final Logger logger = LoggerFactory.getLogger(MasterDataSourceConfig.class);
 
     // 精确到 master 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.hz.learnboot.mybatis.dao.master";

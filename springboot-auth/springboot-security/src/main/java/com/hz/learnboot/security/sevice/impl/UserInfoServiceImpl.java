@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 
-    private Logger logger = LoggerFactory.getLogger(UserInfoServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserInfoServiceImpl.class);
 
     @Resource
     private UserInfoDao userInfoDao;

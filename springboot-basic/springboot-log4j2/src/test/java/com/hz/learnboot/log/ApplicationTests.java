@@ -14,7 +14,7 @@ import java.util.Date;
 @SpringBootTest
 public class ApplicationTests {
 
-    private Logger logger = LoggerFactory.getLogger(ApplicationTests.class);
+    private static final Logger logger = LoggerFactory.getLogger(ApplicationTests.class);
 
     @Test
     public void contextLoads() {

@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TopicConsumer {
 
-    private Logger logger = LoggerFactory.getLogger(TopicConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(TopicConsumer.class);
 
     /**
      * 使用JmsListener配置消费者监听的队列

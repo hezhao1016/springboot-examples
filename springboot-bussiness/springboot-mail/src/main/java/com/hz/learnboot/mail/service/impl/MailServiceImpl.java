@@ -21,7 +21,7 @@ import java.io.File;
 @Component
 public class MailServiceImpl implements MailService {
 
-    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+    private static final Logger logger = LoggerFactory.getLogger(MailService.class);
 
     @Autowired
     private JavaMailSender mailSender;

@@ -20,7 +20,7 @@ import javax.jms.ObjectMessage;
 @Component
 public class QueueConsumer {
 
-    private Logger logger = LoggerFactory.getLogger(QueueConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(QueueConsumer.class);
 
     /**
      * 使用JmsListener配置消费者监听的队列

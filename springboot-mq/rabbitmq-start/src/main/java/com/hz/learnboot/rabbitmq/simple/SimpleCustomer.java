@@ -12,7 +12,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class SimpleCustomer {
 
-    private final static String QUEUE_NAME = "simple.message";
+    private static final String QUEUE_NAME = "simple.message";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         // 创建连接工厂

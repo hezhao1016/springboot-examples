@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 
 //// 1.继承MessageListener
 //public class Receiver implements MessageListener {
-//    private static Logger logger = LoggerFactory.getLogger(Receiver.class);
+//    private static final Logger logger = LoggerFactory.getLogger(Receiver.class);
 //
 //    @Autowired
 //    private StringRedisTemplate redisTemplate;
@@ -34,7 +34,7 @@ import org.springframework.stereotype.Service;
 
 // 2.不继承
 public class Receiver {
-    private static Logger logger = LoggerFactory.getLogger(Receiver.class);
+    private static final Logger logger = LoggerFactory.getLogger(Receiver.class);
 
     public void receiveMessage(String message) {
         logger.info("收到的mq消息" + message);

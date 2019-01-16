@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 @EnableScheduling // 开启定时任务，发现注解了@Scheduled的任务并后台执行
 public class Application {
 
-	private static Logger logger = LoggerFactory.getLogger(Application.class);
+	private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
 	@Autowired
 	private CronRepository cronRepository;

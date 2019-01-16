@@ -18,7 +18,7 @@ import java.util.Properties;
 @Configuration
 public class ShiroConfig {
 
-	private Logger logger = LoggerFactory.getLogger(ShiroConfig.class);
+	private static final Logger logger = LoggerFactory.getLogger(ShiroConfig.class);
 
 	@Bean
 	public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {

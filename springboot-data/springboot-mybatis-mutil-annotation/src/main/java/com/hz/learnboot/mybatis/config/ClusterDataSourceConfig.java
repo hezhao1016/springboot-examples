@@ -35,7 +35,7 @@ import java.util.Properties;
 @MapperScan(basePackages = ClusterDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "clusterSqlSessionFactory")
 public class ClusterDataSourceConfig {
 
-    private static Logger logger = LoggerFactory.getLogger(ClusterDataSourceConfig.class);
+    private static final Logger logger = LoggerFactory.getLogger(ClusterDataSourceConfig.class);
 
     // 精确到 cluster 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.hz.learnboot.mybatis.dao.cluster";

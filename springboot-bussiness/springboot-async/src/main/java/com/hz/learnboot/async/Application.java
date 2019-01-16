@@ -15,7 +15,7 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class Application {
 
-    private static Logger logger = LoggerFactory.getLogger(AsyncTaskService.class);
+    private static final Logger logger = LoggerFactory.getLogger(AsyncTaskService.class);
 
 	public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(Application.class, args);

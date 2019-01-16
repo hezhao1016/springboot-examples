@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class LoggerUtil {
 
-    private static Logger logger = LoggerFactory.getLogger(LoggerUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(LoggerUtil.class);
 
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 

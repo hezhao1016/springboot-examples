@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class TopicCustomer1 {
 
-    private final static String EXCHANGE_NAME = "topicExchange";
+    private static final String EXCHANGE_NAME = "topicExchange";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1.获取连接
